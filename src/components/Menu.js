@@ -9,11 +9,13 @@ const Menu = () => {
                     <Navbar.Collapse id="responsive-navbar">
                         <Nav className="me-auto">
                             <Nav.Link href="/">Inicio</Nav.Link>
+                            <Nav.Link href="/upload">Subir marcas de reloj</Nav.Link>
                             <Nav.Link href="/employees">Empleados</Nav.Link>
-                            <Nav.Link href="/upload">Subir horas</Nav.Link>
+                            <Nav.Link href="/marcas">Marcas</Nav.Link>                            
                             <Nav.Link href="/inasistencia">Inasistencias</Nav.Link>
                             <Nav.Link href="/horasextra">Horas extra</Nav.Link>
                             <Nav.Link href="/descuento">Descuento</Nav.Link>
+                            <Nav.Link href="/sueldo">Sueldos</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
             </Container>

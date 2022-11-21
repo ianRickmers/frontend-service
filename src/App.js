@@ -8,6 +8,9 @@ import AddEmployee from './pages/AddEmployee';
 import Inasistencia from './pages/Inasistencia';
 import HoraExtra from './pages/HoraExtra';
 import Descuento from './pages/Descuento';
+import Sueldo from './pages/Sueldos';
+import UploadData from './pages/UploadData';
+import Marcas from './pages/Marcas';
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
           <Route path="/inasistencia" element={<Inasistencia/>} exact/>
           <Route path="/horasextra" element={<HoraExtra/>} exact/>
           <Route path="/descuento" element={<Descuento/>} exact/>
+          <Route path="/sueldo" element={<Sueldo/>} exact/>
+          <Route path="/upload" element={<UploadData/>} exact/>
+          <Route path="/marcas" element={<Marcas/>} exact/>
         </Routes>
       </Container>
     </Layout>
