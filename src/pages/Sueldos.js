@@ -1,6 +1,12 @@
 import axios from 'axios';
 import { Container, Row, Col, Table} from 'react-bootstrap';
 import { useState, useEffect } from 'react';
+import authToken from './utils/AuthToken';
+
+if(localStorage.jwtToken) {
+    authToken(localStorage.jwtToken);
+}
+
 const Sueldo = () => {
     const [sueldo, setSueldo] = useState([]);
 

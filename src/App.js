@@ -11,6 +11,7 @@ import Descuento from './pages/Descuento';
 import Sueldo from './pages/Sueldos';
 import UploadData from './pages/UploadData';
 import Marcas from './pages/Marcas';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/sueldo" element={<Sueldo/>} exact/>
           <Route path="/upload" element={<UploadData/>} exact/>
           <Route path="/marcas" element={<Marcas/>} exact/>
+          <Route path="/login" element={<Login/>} exact/>
         </Routes>
       </Container>
     </Layout>

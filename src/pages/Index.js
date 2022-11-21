@@ -1,11 +1,22 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 import axios from 'axios';
+import authToken from "./utils/AuthToken";
+
+if(localStorage.jwtToken) {
+    console.log(localStorage.jwtToken);
+    authToken(localStorage.jwtToken);
+}
+
+const config = {
+    headers: { Authorization: `Bearer ${localStorage.jwtToken}` }
+};
+
 
 const calcularPlanilla = async () => {
-
     await axios.get('http://localhost:8012/descuento')
     await axios.get('http://localhost:8012/horaextra/calcular')
-    await axios.get('http://localhost:8012/sueldos/calcular')
+    console.log(config);
+    await axios.get('http://localhost:8012/sueldos/calcular',config)
     
 }
 

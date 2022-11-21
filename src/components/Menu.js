@@ -16,6 +16,7 @@ const Menu = () => {
                             <Nav.Link href="/horasextra">Horas extra</Nav.Link>
                             <Nav.Link href="/descuento">Descuento</Nav.Link>
                             <Nav.Link href="/sueldo">Sueldos</Nav.Link>
+                            <Nav.Link href="/login">Login</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
             </Container>
