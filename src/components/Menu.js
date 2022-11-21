@@ -1,6 +1,10 @@
 import { Nav, Navbar, Container } from 'react-bootstrap';
 
 const Menu = () => {
+
+    const logout = () => {
+        localStorage.removeItem('jwtToken');
+    }
     return (
         <Navbar bg="dark" variant="dark" fixed="top" >
             <Container>
@@ -17,6 +21,7 @@ const Menu = () => {
                             <Nav.Link href="/descuento">Descuento</Nav.Link>
                             <Nav.Link href="/sueldo">Sueldos</Nav.Link>
                             <Nav.Link href="/login">Login</Nav.Link>
+                            <Nav.Link href="/login" onClick={logout}>Logout</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
             </Container>
